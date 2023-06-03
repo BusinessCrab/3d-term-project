@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:gravity="center_horizontal"
+        android:text="Please, Log in!"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/hospital_green">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:showDividers="middle"
+        android:divider="@drawable/empty_tall_divider"
+        android:orientation="vertical"
+        android:paddingVertical="40dp"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/login_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Login"
+            android:textSize="40dp"
+            android:textColor="@color/transparent_grey">
+        </EditText>
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Password"
+            android:textColor="@color/transparent_grey"
+            android:textSize="40dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/hospital_green"
+            android:text="Log In"
+            android:textSize="35dp"
+            android:textStyle="bold">
+        </Button>
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/hospital_green"
+            android:text="Sign Up"
+            android:textSize="35dp"
+            android:textStyle="bold">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
