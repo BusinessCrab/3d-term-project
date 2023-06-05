@@ -18,7 +18,8 @@ public class IntroActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(IntroActivity.this, LogInActivity.class));
+                startActivity(new Intent(v.getContext(), LogInActivity.class));
+                finish();
             }
         });
     }

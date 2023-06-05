@@ -8,61 +8,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
         android:gravity="center_horizontal"
-        android:text="Log In activity"
+        android:padding="50dp"
+        android:text="Sign up"
         android:textSize="40dp"
+        android:textColor="@color/hospital_green"
         android:textStyle="bold"
-        android:textAllCaps="true"
-        android:textColor="@color/hospital_green">
+        android:textAllCaps="true">
     </TextView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:showDividers=""
-        android:divider="@drawable/empty_tall_divider"
-        android:orientation="vertical"
-        android:paddingVertical="40dp"
-        android:paddingHorizontal="20dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Enter username:"
-            android:textSize="20dp"
-            android:textStyle="bold">
-        </TextView>
-
-        <EditText
-            android:id="@+id/login_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:maxLength="16"
-            android:hint="Login"
-            android:textSize="30dp">
-        </EditText>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="Enter password:"
-            android:textSize="20dp"
-            android:textStyle="bold">
-        </TextView>
-
-        <EditText
-            android:id="@+id/password_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:maxLength="16"
-            android:hint="********"
-            android:textSize="30dp">
-        </EditText>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -70,16 +23,38 @@
         android:showDividers="middle"
         android:divider="@drawable/empty_tall_divider"
         android:orientation="vertical"
-        android:paddingTop="40dp">
-        <Button
-            android:id="@+id/login_button"
+        android:paddingVertical="40dp"
+        android:paddingHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/login_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/hospital_green"
-            android:text="Log In"
-            android:textSize="35dp"
-            android:textStyle="bold">
-        </Button>
+            android:background="@color/white"
+            android:text="Login"
+            android:textSize="40dp"
+            android:textColor="@color/transparent_grey">
+        </EditText>
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Password"
+            android:textColor="@color/transparent_grey"
+            android:textSize="40dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/password2_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="Confirm password"
+            android:textColor="@color/transparent_grey"
+            android:textSize="40dp">
+        </EditText>
 
         <Button
             android:id="@+id/signup_button"
